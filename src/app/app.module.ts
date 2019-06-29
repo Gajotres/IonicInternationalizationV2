@@ -39,5 +39,4 @@ export class AppModule {}
 // important for "ahead of time" compilation
 export function HttpFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
-    //return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }

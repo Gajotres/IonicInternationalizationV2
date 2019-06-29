@@ -39,4 +39,8 @@ export class AppModule {}
 // important for "ahead of time" compilation
 export function HttpFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
+
+    /* If you want to change the default translations folder do it like this */
+
+    //return new TranslateHttpLoader(http, './assets/i18mnh/', '.json');
 }
